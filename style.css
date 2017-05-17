@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.box{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+body>header, body>footer {
+    background-color: pink;
+}
+
+nav.box{
+    background-color: magenta;
+    padding: 0 10px;
+}
+
+nav>h2{
+    font-size: 1em;
+    font-weight: normal;
+    display: inline-block;
+}
+
+/*nav>ul{
+    list-style-type: none; 
+    display: inline-block;
+    padding: 0;
+}*/
+
+nav>ul>li{
+    display: inline;
+}
+
+article{
+    width: 60%;
+    box-sizing: border-box;
+    float: left;
+    background-color: darkgray;
+}
+
+article>section{
+    background-color: lightgray;
+}
+
+aside{
+    width: 40%;
+    box-sizing: border-box;
+    float: left;
+    background-color: lightblue;
+}
+
+.main-content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
